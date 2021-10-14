@@ -31,6 +31,20 @@
     function getDistance(pos1,pos2){
         return Math.max(Math.abs(Math.trunc(pos1/6 - pos2/6)),Math.abs(Math.trunc(pos1%6 - pos2%6)))
     }
+
+    function newGame() {
+            triesCount = 0;
+            animalLocation = Math.round(Math.random() * (23 - 0) + 0);
+            document.getElementById("tries").innerHTML = "Number of tries is zero";
+            distanceOfAnimal = "unknown"
+            document.getElementById("distance").innerHTML = "Distance is " + distanceOfAnimal;
+            for (var i = 0; i < 24; i++) {
+                if(ids[i]== ids[animalLocation])
+                document.getElementById(ids[i]).src = "monkey.jpg";
+                else
+                document.getElementById(ids[i]).src = "tree.jpg"
+            }
+        }
     </script>
 
 
