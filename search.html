@@ -29,7 +29,7 @@
      }
 
     function getDistance(pos1,pos2){
-        return Math.max(Math.abs(Math.trunc(pos1/6 - pos2/6)),Math.abs(Math.trunc(pos1%6 - pos2%6)))
+        return Math.max(Math.abs(Math.trunc(pos1/6) -Math.trunc(pos2/6)),Math.abs(Math.trunc(pos1%6)-Math.trunc(pos2%6)))
     }
 
     function newGame() {
